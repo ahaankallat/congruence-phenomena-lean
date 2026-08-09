@@ -2,7 +2,7 @@ import Mathlib
 
 /-!
 Formalization of the universal cycle-index polynomials `C_n` from
-`logarithmic_weight_congruence_theory_VERIFIED.tex` (the "General Theory of
+`A_General_Theory_of_Congruence_Phenomena_I.tex` (the "General Theory of
 Congruence Phenomena" manuscript), Section 2-3.
 
 We take Proposition `prop:recurrence` (the falling-factorial recurrence) as
