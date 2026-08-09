@@ -30,3 +30,5 @@ import CongruenceTheory.NoAllEgfShift
 import CongruenceTheory.GeneralTwoAdicDefect
 import CongruenceTheory.CpermEqC
 import CongruenceTheory.OptimalDivisorC
+import CongruenceTheory.PrimeValue
+import CongruenceTheory.PrimeWitness
