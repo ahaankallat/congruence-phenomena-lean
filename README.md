@@ -1,6 +1,6 @@
 # A General Theory of Congruence Phenomena, Part I — Lean
 
-A Lean 4 / Mathlib formalization of `A_General_Theory_of_Congruence_Phenomena_I.tex`
+A Lean 4 / Mathlib formalization of `Congruence_Phenomena_in_Exponential_Generating_Functions_I_Canonical_Coordinates_and_Universal_Shift_Congruences.tex`
 ("Universal Shift Congruences and the Strong Two-Adic Lift"), Part I of a
 two-part manuscript, covering its two headline results.
 
