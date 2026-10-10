@@ -31,6 +31,15 @@ foundational cycle-index and orbit-counting machinery.
   polynomial refinement) — same induction, over `Polynomial ℤ` instead of
   `ℤ`, genuinely low marginal value over what's already proved, skipped for
   now.
+- **Theorem `thm:power-of-two`** ("Explicit power-of-two residue") and its corollary
+  (`cor:power-of-two-01`) — **complete**, `CongruenceTheory/PowerOfTwoResidue.lean`, zero `sorry`,
+  `#print axioms` reports only `[propext, Classical.choice, Quot.sound]`. With
+  `α = w₁ + w₂`, `β = w₂ + w₄`: `power_of_two_r1/r2/r3` give `A_w(2) ≡ α (2)`,
+  `A_w(4) ≡ α² + 2β (4)`, `A_w(8) ≡ α⁴ + 4α²β + 4β² (8)`; `power_of_two_residue` gives
+  `A_w(2^r) ≡ α^(2^(r-1)) (mod 2^r)` for every `r ≥ 4`; `power_of_two_zero_one` shows the residue
+  is `1` or `0` according to the parity of `α`. The proof needs only `Aw_two_adic` (the strong
+  lift stated for the recurrence-native `A_w`, derived from `strong_two_adic` via `Cperm_eq_C`)
+  and the explicit values of `A_w(2)` and `A_w(4)`.
 - **Theorem `thm:strong`** ("Strong two-adic lifting") —
   `CongruenceTheory.strong_two_adic`, in `CongruenceTheory/StrongTwoAdic.lean`:
   `∃ Q, CpermSum(2^s) − Cperm(2^s)·Cperm(2^s) = 2^(2s−1) · Q` for every `s ≥ 1`,

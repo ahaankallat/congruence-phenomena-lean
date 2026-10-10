@@ -32,3 +32,4 @@ import CongruenceTheory.CpermEqC
 import CongruenceTheory.OptimalDivisorC
 import CongruenceTheory.PrimeValue
 import CongruenceTheory.PrimeWitness
+import CongruenceTheory.PowerOfTwoResidue
