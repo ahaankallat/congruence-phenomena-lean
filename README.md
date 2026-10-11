@@ -1,11 +1,14 @@
-# A General Theory of Congruence Phenomena, Part I — Lean
+# Universal Shift Congruences for Weighted Permutation Sequences — Lean
 
-A Lean 4 / Mathlib formalization of `Congruence_Phenomena_in_Exponential_Generating_Functions_I_Canonical_Coordinates_and_Universal_Shift_Congruences.tex`
-("Universal Shift Congruences and the Strong Two-Adic Lift"), Part I of a
-two-part manuscript, covering its two headline results.
+A Lean 4 / Mathlib formalization of the paper *Universal Shift Congruences for
+Weighted Permutation Sequences* (A. Kallat), covering the shift congruence, the
+exact content of the two-term defect, the strong two-adic lift and the explicit
+power-of-two residue theorem.
 
-Part II (connected cumulants and the complete prime-local classification of
-higher-order defects) is formalized separately, in
+The second paper, *Higher-Order Defects of Cycle-Index Polynomials* (connected
+cumulants and the prime-local classification of higher-order defects), is
+formalized separately, together with the lifting theorem at every prime and the
+Lagrange-type theorem of the main paper, in
 [`congruence-phenomena-higher-order-lean`](https://github.com/ahaankallat/congruence-phenomena-higher-order-lean),
 which depends on this repository as a Lake library dependency for its
 foundational cycle-index and orbit-counting machinery.
@@ -510,7 +513,7 @@ revision.
 
 ## Scope
 
-This repository covers exactly Part I of the two-part manuscript: the
+This repository covers the main paper and the framework behind it: the
 universal shift congruence, the strong two-adic lift, canonical logarithmic
 coordinates, base change, localization, finite determinacy, multiplicative
 functoriality, and the exact content of the two-term multiplicative defect.
