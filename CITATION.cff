@@ -1,0 +1,29 @@
+cff-version: 1.2.0
+message: "If you use this formalization, please cite the paper below."
+title: "Lean 4 formalization of 'Universal Shift Congruences for Weighted Permutation Sequences'"
+type: software
+authors:
+  - family-names: Kallat
+    given-names: Ahaan
+    affiliation: "Northeastern University"
+repository-code: "https://github.com/ahaankallat/congruence-phenomena-lean"
+license: Apache-2.0
+abstract: "Lean 4 and Mathlib formalization of the shift congruence, the exact content of the cycle-index defect, the strong two-adic lift and the power-of-two residue theorem for sequences counting weighted permutations."
+keywords:
+  - "lean4"
+  - "mathlib"
+  - "formal verification"
+  - "congruences"
+  - "cycle index"
+  - "weighted permutations"
+  - "exponential generating functions"
+  - "OEIS"
+preferred-citation:
+  type: article
+  authors:
+    - family-names: Kallat
+      given-names: Ahaan
+  title: "Universal Shift Congruences for Weighted Permutation Sequences"
+  year: 2026
+  journal: "arXiv:2610.15849"
+  url: "https://arxiv.org/abs/2610.15849"

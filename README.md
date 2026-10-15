@@ -1,17 +1,9 @@
-# Universal Shift Congruences for Weighted Permutation Sequences — Lean
+# Universal shift congruences for weighted permutation sequences (Lean 4)
 
-A Lean 4 / Mathlib formalization of the paper *Universal Shift Congruences for
-Weighted Permutation Sequences* (A. Kallat), covering the shift congruence, the
-exact content of the two-term defect, the strong two-adic lift and the explicit
-power-of-two residue theorem.
+This repository holds the Lean 4 and Mathlib formalization that goes with the paper *Universal Shift Congruences for Weighted Permutation Sequences* by Ahaan Kallat ([arXiv:2610.15849](https://arxiv.org/abs/2610.15849)). The paper looks at sequences that count permutations in which every cycle of length m carries a weight, a family that contains the involution numbers, the derangement numbers and many other entries of the OEIS. It proves that these sequences satisfy the congruence A(n+k) ≡ A(n)A(k) modulo lcm(n,k) for every choice of integer weights, finds the exact modulus for the universal cycle-index polynomials, shows how the congruence lifts to prime powers, and settles several conjectures recorded in the OEIS.
 
-The second paper, *Higher-Order Defects of Cycle-Index Polynomials* (connected
-cumulants and the prime-local classification of higher-order defects), is
-formalized separately, together with the lifting theorem at every prime and the
-Lagrange-type theorem of the main paper, in
-[`congruence-phenomena-higher-order-lean`](https://github.com/ahaankallat/congruence-phenomena-higher-order-lean),
-which depends on this repository as a Lake library dependency for its
-foundational cycle-index and orbit-counting machinery.
+The files in this repository prove the shift congruence for the cycle-index polynomials, the exact content of C_{n+k} − C_n C_k, the strong two-adic lift, and the explicit power-of-two residue theorem. The lift at every prime and its sharpness, the closed formula for A_w(p^r) modulo p^r, eventual divisibility, the Lagrange-inversion family, and the conjectures of Hanna, Richman and Bala (A227937) are formalized in [`congruence-phenomena-higher-order-lean`](https://github.com/ahaankallat/congruence-phenomena-higher-order-lean), which builds on this repository as a Lake dependency. That second repository also formalizes the paper *Higher-Order Defects of Cycle-Index Polynomials*, on connected cumulants and the prime-local classification of higher-order defects.
+
 
 ## Status: both principal theorems fully verified, zero `sorry`, zero paper-specific axioms
 
@@ -561,3 +553,7 @@ less complete verification status).
   anything this round (working around several `omega`-can't-see-`hp.pos`
   and cast-ambiguity traps), but every piece was validated standalone
   before assembly, and nothing was left broken.
+
+## License and citation
+
+The code is released under the Apache License 2.0 (see `LICENSE`). Citation details are in `CITATION.cff`, and GitHub shows a "Cite this repository" button.
